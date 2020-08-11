@@ -1,15 +1,18 @@
 
 <!doctype html>
 <html lang="en">
+
+{% load staticfiles %}
+
+
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v4.1.1">
-    <title>Album example · Bootstrap</title>
+    <title>Mohamed Aly</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/album/">
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -47,20 +50,20 @@
   <body>
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Mohamed Aly</a>
+        <a class="navbar-brand" href="{% url 'home'%}">Mohamed Aly</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item ">
-              <a class="nav-link" href="https://www.linkedin.com/in/mohamed-aly08/" target="_blank">LinkedIn </a>
+              <a class="nav-link " href="https://www.linkedin.com/in/mohamed-aly08/" target="_blank">LinkedIn </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Resume</a>
+              <a class="nav-link " href="{% static 'Resumé Final (2) copy.pdf' %}" target="_blank">Resume</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Blog</a>
+              <a class="nav-link " href="{% url 'allblogs' %}">Blog</a>
 
 </header>
 
@@ -72,18 +75,26 @@
       <p class="lead text-muted">McMaster Software Engineering Class of 2024</p>
       <p>
         <a href="https://www.linkedin.com/in/mohamed-aly08/" target="_blank" class="btn btn-primary btn-lg">LinkedIn</a>
-        <a href="" target="_blank" class="btn btn-primary btn-lg">Resume</a>
+        <a href="{% static 'Resumé Final (2) copy.pdf' %}" target="_blank" class="btn btn-primary btn-lg">Resume</a>
       </p>
 
       <p>
         <a href="mailto:mohamed_alyaly@outlook.com" class="btn btn-secondary my-2">Email Me</a>
 
       </p>
+
+      <img src="{% static 'article-2249148-168C2204000005DC-768_634x389.jpg' %}" height="300"/>
     </div>
   </section>
 
+
+
   <div class="album py-5 bg-light">
     <div class="container">
+
+      <h2 class="text-center">Projects and Relevent Experience</h2>
+
+      <hr>
 
       <div class="row">
 
